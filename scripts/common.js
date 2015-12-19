@@ -10,3 +10,11 @@ function setToFiftyMins() {
 function setToTwentyFiveMins() {
     $("#defaultTime").html("25:00");
 }
+
+function setToShortBreak() {
+    $("#defaultTime").html("05:00");
+}
+
+function setToLongBreak() {
+    $("#defaultTime").html("10:00");
+}
