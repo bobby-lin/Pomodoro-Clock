@@ -6,3 +6,7 @@
 function setToFiftyMins() {
     $("#defaultTime").html("50:00");
 }
+
+function setToTwentyFiveMins() {
+    $("#defaultTime").html("25:00");
+}
