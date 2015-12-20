@@ -25,6 +25,14 @@ function setToLongBreak() {
 
 var timer;
 
+function startTimer() {
+    startCountdown();
+}
+
+function pauseTimer() {
+    clearInterval(timer);
+}
+
 function reset() {
     clearInterval(timer);
     $("#defaultTime").html("25:00");
@@ -59,9 +67,7 @@ function startCountdown() {
                 sec--;
             }
         }
-
         e.innerHTML = getMinString(min) + ":" + getSecString(sec);
-        console.log("Min is " + getMinString(min) + ", Sec is " + getSecString(sec));
     }
 }
 
