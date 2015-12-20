@@ -1,3 +1,17 @@
+body {
+    background-color: beige;
+}
+
+#start-btn {
+    background-color: green;
+    color: white;
+}
+
+#pause-btn {
+    background-color: darkgray;
+    color: white;
+}
+
 #defaultTime {
     font-size: 5em;
 }
