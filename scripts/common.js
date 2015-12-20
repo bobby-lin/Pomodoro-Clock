@@ -67,28 +67,17 @@ function startCountdown() {
                 sec--;
             }
         }
-        e.innerHTML = getMinString(min) + ":" + getSecString(sec);
+        e.innerHTML = getTimeString(min) + ":" + getTimeString(sec);
     }
 }
 
-function getMinString(min) {
-    var minStr = "";
-    if(min < 10) {
-        minStr = "0" + min;
+function getTimeString(n) {
+    var timeStr = "";
+    if(n < 10) {
+        timeStr = "0" + n;
     } 
     else {
-        minStr = min;
+        timeStr = n;
     }
-    return minStr;
-}
-
-function getSecString(sec) {
-    var secStr = "";
-    if(sec < 10) {
-        secStr = "0" + sec;
-    } 
-    else {
-        secStr = sec;
-    }
-    return secStr;
+    return timeStr;
 }
